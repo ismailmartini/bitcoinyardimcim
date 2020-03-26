@@ -33,8 +33,6 @@ class TickerViewModel: ObservableObject {
     
     private var tickerService:TickerService!
     
-    //view modelimizden dagılacak sınıf ticker
-    //apiden dönen verileri view'e aktaracağız
     @Published var ticker =  Ticker()
      
     
@@ -44,8 +42,6 @@ class TickerViewModel: ObservableObject {
     init() {
         self.tickerService=TickerService()
     }
-    
-    //view'ımızın kullanacağı değerler
     
     var sembol: String{
         if let sembol=self.ticker.pair {
@@ -182,7 +178,7 @@ class TickerViewModel: ObservableObject {
     
     
     
-     //view tarafından kullanılacak func
+      
     var pairName:String = ""
     func search()  {
         
@@ -202,9 +198,7 @@ class TickerViewModel: ObservableObject {
     
     
     
-    
-    
-    //viewmodel tarafından kullanılacak özel func view ulaşamaz
+     
     private func fetchSinglePair(by pair:String) {
         
         self.tickerService.getSinglePair(pair: pair) {  ticker in
