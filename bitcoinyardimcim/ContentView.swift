@@ -23,7 +23,21 @@ struct ContentView: View {
                 
                 
                 Form{
-                    
+                    Section{
+                        
+                        HStack{
+                            
+                            Image("BTC")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 64, height: 64).padding(8)
+                        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                        
+                        
+                        
+                                                                 
+                                              
+                    }
                     
                     Section{
                         HStack{
@@ -69,7 +83,7 @@ struct ContentView: View {
                 }
                 
                 
-            }
+            }.navigationBarTitle("Bitcoin Yardımcım")
         }
     }
 }
