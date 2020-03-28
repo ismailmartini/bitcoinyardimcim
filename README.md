@@ -4,7 +4,7 @@ SWIFTUI ile BTC türk apisi ile veri çekmek - MVVM design pattern uygun olarak 
   
 ## Ekran Görüntüleri
 
-![ana ekran](https://github.com/ismailmartini/swiftui_customnavbar/blob/master/CustomNavigationBarAndModal/main.png)
+![ana ekran](https://github.com/ismailmartini/btcturk_bitcoinyardimcim/blob/master/anaekran.png)
 
 **geri butonu ve özel başlık ekleme**
 ```
